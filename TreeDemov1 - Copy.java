@@ -100,7 +100,16 @@ class Node{
 	  
 	   public void postOrderTraversal(Node root){
          //implement in here
+		if(root == null) {
+			   return;
+		   }
 		   
+		   //go left
+		   postOrderTraversal(root.left);
+		   //go right
+		   postOrderTraversal(root.right);
+		   //process node
+		   System.out.print(root.value+" ");	   
 	   }
 	   
 	   
