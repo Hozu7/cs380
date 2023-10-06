@@ -142,7 +142,13 @@ class Node{
 	   */
 	   public int getMin(Node root){
          //implement in here
+	      Node temp = root;
 	      
+	      while(temp.left != null) {
+	    	  temp = temp.left;
+	      }
+	      
+	      return temp.value;
 	   }
 	  
 	  
