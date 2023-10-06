@@ -59,6 +59,16 @@ class Node{
 	   */
 	   public void preOrderTraversal(Node root){
 		//implement in here
+		if(root == null) {
+			   return;
+		   }
+		   
+		   //process node
+		   System.out.print(root.value+" ");
+		   //go left
+		   preOrderTraversal(root.left);
+		   //go right
+		   preOrderTraversal(root.right);
 	
 	   }
 
@@ -69,6 +79,16 @@ class Node{
 	   */
 	   public void inOrderTraversal(Node root){
 	      //implement in here
+		if(root == null) {
+			   return;
+		   }
+		   
+		   //go left
+		   inOrderTraversal(root.left);
+		   //process node
+		   System.out.print(root.value+" ");
+		   //go right
+		   inOrderTraversal(root.right);
 		   
 	   }
 	   
